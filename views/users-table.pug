@@ -1,0 +1,31 @@
+extends layout.pug 
+
+block content 
+    section.section.page
+
+        if users.length
+            table.table
+                thead
+                    tr
+                        th(scope='col') ID
+                        th(scope='col') Name
+                        th(scope='col') Surname
+                        th(scope='col') Email
+                        th(scope='col') Password
+                        th(scope='col') Update
+                        th(scope='col') Delete
+                tbody
+                    each user in users
+                        tr
+                            th(scope='row')= user.id
+                            td= user.name
+                            td= user.surname
+                            td= user.email
+                            td= user.password
+                            td
+                                button.update-btn.btn-custom(data-id= user.id) Update
+                            td
+                                button.delete-btn.btn-custom(data-id= user.id) Delete
+
+        else 
+            h3.m-4 No users found

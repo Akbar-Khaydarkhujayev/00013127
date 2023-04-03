@@ -1,0 +1,25 @@
+extends layout.pug 
+
+block content 
+    section.section.page
+        h1 Register
+
+        form.form#create-form(action="/users/create", method="POST")
+
+            label Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            input.input(type="text", name="name")
+            div
+
+            label Surname:
+            input.input(type="text", name="surname")
+            div
+
+            label Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            input.input(type="email", name="email")
+            div
+
+            label Password:
+            input.input(type="password", name="password")
+            div
+
+            button.input.btn-custom Submit

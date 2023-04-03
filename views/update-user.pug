@@ -1,0 +1,20 @@
+extends layout.pug 
+
+block content 
+    section.section.page
+        h1 Update User Info
+        p#error Validation Error
+        form.form#update-form(data-id= user.id)
+            label Name:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            input.input(type="text", name="name" value= user.fullname)
+            div
+
+            label Surname:
+            input.input(type="text", name="surname" value= user.fullname)
+            div
+
+            label Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            input.input(type="email", name="email" value= user.fullname)
+            div
+
+            button.input.btn-custom#btn-update Update
