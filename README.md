@@ -17,6 +17,6 @@ Dependencies
     Express, Pug, Express-validator, uuid and bootstrap
 
 Link to github
-    https://github.com/Akbar-Khaydarkhujayev/00013127
+    [https://github.com/Akbar-Khaydarkhujayev/00013127](https://github.com/00013127/00013127)
 
 Structure is the same as lecturer had on seminars that is why i dont think to write about it.
